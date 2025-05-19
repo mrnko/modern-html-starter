@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.hero {
+  &__container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    text-align: center;
+
+    @include md {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    text-wrap: balance;
+  }
+
+  &__text {
+    @include fluid-text(18, 14);
+
+    @include md {
+      max-width: rem(800);
+    }
+  }
+}

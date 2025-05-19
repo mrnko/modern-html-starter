@@ -1,62 +1,67 @@
 ﻿# Changelog
 
-Все значительные изменения в этом проекте документируются в этом файле.
+All significant changes to this project are documented in this file.
 
-Формат основан на [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-и этот проект придерживается [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2025-05-19
+
+- Renamed the starter to `Modern HTML5 Starter Template`.
+- Updated the project architecture.
 
 ## [0.5.0] - 2024-07-01
 
-- Добавлены подсказки для специальных устройств и скринридеров в демо шаблоне.
-- Добавлена JS библиотека `particles.js`.
-- Добавлена директория `public/resources` для хранения пользовательских ресурсов.
-- Добавлена директория `.vscode`, которая содержит сниппеты для VS Code в формате JSON, которые помогут в работе с проектом.
-- Добавлена секция `Преимущества` в демо шаблон.
-- Добавлено скрытие стандартной кнопки `Очистить поле поиска` в поле поиска в браузерах.
-- Изменен логотип проекта.
-- Изменены оформление демо шаблона.
-- Изменены аниации элементов ScrollReveal.
-- Исправлено мерцание анимации загрузки элементов, путем добавления класса `.load-hidden`.
-- Исправлены некоторые ошибки.
+- Added accessibility tips for assistive devices and screen readers in the demo template.
+- Integrated the `particles.js` JavaScript library.
+- Added a `public/resources` directory to store user assets.
+- Added a `.vscode` folder containing JSON snippets for VS Code to assist with development.
+- Added a "Benefits" section to the demo template.
+- Implemented hiding of the default "clear search field" button in browsers.
+- Updated the project logo.
+- Updated the design of the demo template.
+- Updated element animations using ScrollReveal.
+- Fixed loading animation flicker by adding the .load-hidden class.
+- Fixed several bugs.
 
 ## [0.4.0] - 2024-06-30
  
-- Добавлена директория `.core` с системными файлами проекта.
-- Добавлен скрипт сброса демо данных проекта по команде `npm run clear`.
-- Добавлен скрипт создания архива из файлов проекта по команде `npm run zip`.
-- Добавлена документация к проекту.
-- Добавлена страница `404.html` в корневой папке проекта.
-- Добавлен файл `public/partials/page-not-found.html`.
-- Добавлен класс `.fluid` для SASS компонента `container`.
-- Добавлен пользовательский класс `.tablet-only` для опеределния устройства пользователя.
-- Добавлена директория `src/scss/pages` для подключения специфических стилей для страниц.
-- Добавлен файл `src/scss/pages/_page-not-found.scss` для подключения стилей страницы 404.
-- Изменена структура проекта.
-- Изменена структура JS скриптов и улучшен функционал скриптов.
-- Изменены файлы проекта и добавлены комментарии.
-- Изменены изображения favicon проекта в директории `public/images/favicons`.
-- Изменен файл `public/partials/head.html`.
-- Изменены названия пользовательских классов: `.is-mobile` и `.is-desktop` на `.mobile-only` и `.desktop-only`.
-- Удален файл `src/scss/abstracts/placeholders`.
-- Исправлены некоторые ошибки.
+- Added a `.core` directory for system files.
+- Added a script to reset demo data with the command npm run clear.
+- Added a script to archive project files using the command npm run zip.
+- Added project documentation.
+- Added a `404.html` page to the project root.
+- Added `public/partials/page-not-found.html`.
+- Added a `.fluid` class to the SASS container component.
+- Added a custom `.tablet-only` class to detect tablet devices.
+- Added a `src/scss/pages` folder for page-specific styles.
+- Added `src/scss/pages/_page-not-found.scss` for 404 page styles.
+- Updated the project structure.
+- Refactored JS scripts and improved functionality.
+- Updated project files and added comments.
+- Updated favicon images in `public/images/favicons`.
+- Updated `public/partials/head.html`.
+- Renamed utility classes `.is-mobile` and `.is-desktop` to `.mobile-only` and `.desktop-only`.
+- Removed the `src/scss/abstracts/placeholders` file.
+- Fixed various bugs.
 
 ## [0.3.0] - 2024-03-16
  
-- Добавлен новый SCSS миксин: `grid-list`.
-- Добавлен компонент предупреждения о файлах cookies.
-- Добавлен новый эффект параллакса мыши с атрибутом `data-parallax`.
-- Добавлен файл в SCSS - `/src/scss/base/classes`.
-- Добавлен атрибут кода даты для телефона при вводе.
-- Добавлены пользовательские классы: `.is-mobile` и `.is-desktop` для опеределния устройства пользователя.
-- Исправлены некоторые ошибки.
+- Added new SCSS mixin: `grid-list`.
+- Added a cookie consent component.
+- Added a new mouse parallax effect using the data-parallax attribute.
+- Added `/src/scss/base/classes` SCSS file.
+- Added input type attribute for phone date formatting.
+- Added utility classes `.is-mobile` and `.is-desktop` for device detection.
+- Fixed several bugs.
 
 ## [0.2.0] - 2024-03-15
 
-- Добавлено разделение стилей SCSS на группы: компоненты, макеты, страницы.
-- Изменена структура проекта.
-- Изменено сайдменю на мобильных устройствах.
-- Исправлены некоторые ошибки.
+- Introduced SCSS structure separation into components, layouts, and pages.
+- Refactored project structure.
+- Updated mobile side menu behavior.
+- Fixed several bugs.
  
 ## [0.1.0] - 2023-09-16
  
-- Первая версия сборщика сайтов ViteJS HTML5 STARTER.
+- Initial release.

@@ -1,0 +1,83 @@
+@use './functions' as *;
+
+$sm: 576.98;
+$md: 768.98;
+$lg: 992.98;
+$xl: 1200.98;
+$xxl: 1400.98;
+
+@mixin sm-below {
+  @media (max-width: rem($sm)) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: rem($sm)) {
+    @content;
+  }
+}
+
+@mixin md-below {
+  @media (max-width: rem($md)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: rem($md)) {
+    @content;
+  }
+}
+
+@mixin lg-below {
+  @media (max-width: rem($lg)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: rem($lg)) {
+    @content;
+  }
+}
+
+@mixin xl-below {
+  @media (max-width: rem($xl)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: rem($xl)) {
+    @content;
+  }
+}
+
+@mixin xxl-below {
+  @media (max-width: rem($xxl)) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: rem($xxl)) {
+    @content;
+  }
+}
+
+@mixin hover($hasActiveEffectOnMobile: true) {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @if ($hasActiveEffectOnMobile) {
+    @media (any-hover: none) {
+      &:active {
+        @content;
+      }
+    }
+  }
+}

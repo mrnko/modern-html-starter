@@ -1,0 +1,63 @@
+@use '../helpers' as *;
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: color-mix(in srgb, var(--background-color), var(--color-black) 30%);
+  border-bottom: rem(1) solid color-mix(in srgb, var(--background-color), var(--color-white) 5%);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: rem(16);
+  }
+
+  &__section {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(24);
+  }
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    background-color: color-mix(in srgb, var(--background-color), var(--color-black) 40%);
+    transition-duration: var(--transition-duration);
+
+    @include md-below {
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+
+    @include md {
+      display: contents;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    max-width: rem(300);
+    align-self: center;
+
+    @include md {
+      max-width: fit-content;
+      align-self: auto;
+    }
+  }
+
+  &__burger-button {
+    @include md {
+      display: none;
+    }
+  }
+}

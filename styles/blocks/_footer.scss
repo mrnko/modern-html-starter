@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+.footer {
+  padding-bottom: rem(20);
+  font-size: rem(14);
+  text-align: center;
+  opacity: .7;
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    opacity: 1;
+  }
+
+  @include md {
+    text-align: left;
+  }
+}

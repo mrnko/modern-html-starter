@@ -1,113 +1,21 @@
-# HTML5 Starter — сборка Oleksii Myronenko
+# Modern HTML5 Starter Template
 
-> Используется ViteJS. Тестировалось на node.js 20.15.0
+[![mrnko - modern-html5-starter-template](https://img.shields.io/static/v1?label=mrnko&message=modern-html5-starter-template&color=blue&logo=github)](https://github.com/mrnko/modern-html5-starter-template "Go to GitHub repo")
+[![stars - modern-html5-starter-template](https://img.shields.io/github/stars/mrnko/modern-html5-starter-template?style=social)](https://github.com/mrnko/modern-html5-starter-template)
+[![forks - modern-html5-starter-template](https://img.shields.io/github/forks/mrnko/modern-html5-starter-template?style=social)](https://github.com/mrnko/mmodern-html5-starter-template)
 
-## Начало работы
+A minimalistic and modern template for a quick start HTML5-based web project. Includes basic structure with clean and semantic code, adaptive markup, support for modern standards and ready-to-use tools for fast development. Ideal for creating one-page websites, prototypes or training projects.
 
-Для работы с данной сборкой в новом проекте, склонируйте все содержимое репозитория <br>
-`git clone <this repo>`
-Затем, находясь в корне проекта, запустите команду `npm i`, которая установит все находящиеся в package.json зависимости.
-После этого вы можете использовать любую из предложенных команд сборки (подробнее - ниже, в разделе __npm-скрипты__).
+## Usage
 
-## Структура папок и файлов
+1. To work with this html5 starter template in a new project, clone all the contents of the repository using the command: `git clone https://github.com/mrnko/modern-html5-starter-template.git`
+2. While in the root folder of the project, run the command `npm i`, which will install all the dependencies in package.json.
+3. Enjoy the development of your new project 😀
 
-```
-├── .core/                        # Системная папка проекта
-│   ├── scripts/                  # папка с системными скриптами
-│   │   ├── clear.js              # скрипт очистки проекта от демо данных
-│   │   └── zip.js                # скрипт создания архива из файлов проекта
-├── public/                       # Все файлы для публичного доступа
-│   ├── fonts/                    # директория со шрифтами
-│   ├── images/                   # директория с изображениями
-│   │   ├── favicons/             # директория с favicon изображениями
-│   │   └── og-image.jpg          # обложка сайта для социальных сетей (1200x630px)
-│   └── partials/                 # директория с подключаемыми файлами html
-├── src/                          # Исходники проекта
-│   ├── js/                       # Скрипты
-│   │   ├── components/           # js-компоненты
-│   │   ├── functions/            # js функции
-│   │   ├── _vars.js              # файл с переменными проекта
-│   │   ├── _functions.js         # файл с готовыми функциями на js
-│   │   ├── _components.js        # файл с подключениями компонентов
-│   │   └── app.js                # Главный скрипт
-│   ├── scss/                     # Стили сайта (препроцессор sass в scss-синтаксисе)
-│   │   ├── abstracts/            # директория с подключением стилей и переменными проекта
-│   │   ├── base/                 # базовые стили
-│   │   ├── components/           # scss-компоненты
-│   │   ├── functions/            # функции
-│   │   ├── mixins/               # директория для сохранения готовых scss-компонентов
-│   │   ├── pages/                # директория для стилей страниц
-│   │   ├── vendors/              # директория для хранения локальных css-стилей библиотек
-│   │   └── style.scss            # Главный файл стилей
-└── index.html                    # Главная страница проекта
-└── package.json                  # файл с настройками сборки и установленными пакетами
-└── package-lock.json             # файл с настройками сборки и установленными пакетами
-└── .editorconfig                 # файл с настройками форматирования кода
-└── vite.config.js                # файл с настройщиком сборки
-└── CHANGELOG.md                  # файл с информацией о изменениях в проекте
-└── LICENSE.md                    # файл с информацией о лицензии
-└── README.md                     # документация сборки
-```
+## NPM scripts
 
-## Оглавление
-1. [npm-скрипты](#npm-скрипты)
-2. [Работа с HTML](#работа-с-html)
-3. [Работа с CSS](#работа-с-css)
-4. [Работа с JavaScript](#работа-с-javascript)
-5. [Работа со шрифтами](#работа-со-шрифтами)
-6. [Работа с изображениями](#работа-с-изображениями)
+The project allows you to call the required system npm scripts via command line / terminal.
 
-## npm-скрипты
-
-Проект позволяет вызывать нужные системные npm скрипты через командную строку / терминал.
-
-* `npm run dev` — базовая команда, которая запускает проект в режиме разработки.
-* `npm run build` — команда, запускающая продакшн-версию сборки.
-* `npm run preview` — команда, запускающая локальный предпросмотр продакшн-версии сборки.
-* `npm run clear` — очистить проект от демо данных.
-* `npm run zip` — команда собирает ваш готовый код в zip-архив.
-
-## Работа с HTML
-
-Lorem ipsum...
-
-## Работа с CSS
-
-Lorem ipsum...
-
-## Работа с JavaScript
-
-Lorem ipsum...
-
-## Работа со шрифтами
-
-Lorem ipsum...
-
-## Работа с изображениями
-
-Lorem ipsum...
-
-Автор: Алексей Мироненко (https://mrnko.com)
-
-## Изменения в версии 0.0.4 (от 30.06.2024)
-
-- Добавлена директория `.core` с системными файлами проекта.
-- Добавлен скрипт сброса демо данных проекта по команде `npm run clear`.
-- Добавлен скрипт создания архива из файлов проекта по команде `npm run zip`.
-- Добавлена документация к проекту.
-- Добавлена страница `404.html` в корневой папке проекта.
-- Добавлен файл `public/partials/page-not-found.html`.
-- Добавлен класс `.fluid` для SASS компонента `container`.
-- Добавлен пользовательский класс `.tablet-only` для опеределния устройства пользователя.
-- Добавлена директория `src/scss/pages` для подключения специфических стилей для страниц.
-- Добавлен файл `src/scss/pages/_page-not-found.scss` для подключения стилей страницы 404.
-- Изменена структура проекта.
-- Изменена структура JS скриптов и улучшен функционал скриптов.
-- Изменены файлы проекта и добавлены комментарии.
-- Изменены названия пользовательских классов: `.is-mobile` и `.is-desktop` на `.mobile-only` и `.desktop-only`.
-- Изменен файл `public/partials/head.html`
-- Удален файл `src/scss/abstracts/placeholders`
-
-[![mrnko - mrnko-starter](https://img.shields.io/static/v1?label=mrnko-starter&message=mrnko-starter&color=blue&logo=github)](https://github.com/mrnko/mrnko-starter "Go to GitHub repo")
-[![stars - mrnko-starter](https://img.shields.io/github/stars/mrnko/mrnko-starter?style=social)](https://github.com/mrnko/mrnko-starter)
-[![forks - mrnko-starter](https://img.shields.io/github/forks/mrnko/mrnko-starter?style=social)](https://github.com/mrnko/mrnko-starter)
+* `npm run sass-watch` — Convert SCSS style files from the `styles` folder to CSS files in the `css` folder and start watching for any changes. Whenever you modify a SCSS file, it automatically recompiles the CSS.
+* `npm run dev` — Runs both SCSS watching and a local development server using serve in parallel.
+* `npm run build` — Compile SCSS files from the `styles` folder into CSS in the `css` folder and produce a minified (compressed) CSS output suitable for production.
