@@ -4,7 +4,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass-watch": "sass --watch styles:css",
-    "build": "sass styles:css --style=compressed",
+    "build": "sass styles/main.scss css/main.min.css --style=compressed",
     "serve": "npx serve .",
     "dev": "npm-run-all --parallel sass-watch serve"
   },
