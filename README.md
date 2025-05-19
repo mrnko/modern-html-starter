@@ -2,7 +2,7 @@
 
 [![mrnko - modern-html5-starter-template](https://img.shields.io/static/v1?label=mrnko&message=modern-html5-starter-template&color=blue&logo=github)](https://github.com/mrnko/modern-html5-starter-template "Go to GitHub repo")
 [![stars - modern-html5-starter-template](https://img.shields.io/github/stars/mrnko/modern-html5-starter-template?style=social)](https://github.com/mrnko/modern-html5-starter-template)
-[![forks - modern-html5-starter-template](https://img.shields.io/github/forks/mrnko/modern-html5-starter-template?style=social)](https://github.com/mrnko/mmodern-html5-starter-template)
+[![forks - modern-html5-starter-template](https://img.shields.io/github/forks/mrnko/modern-html5-starter-template?style=social)](https://github.com/mrnko/modern-html5-starter-template)
 
 A minimalistic and modern template for a quick start HTML5-based web project. Includes basic structure with clean and semantic code, adaptive markup, support for modern standards and ready-to-use tools for fast development. Ideal for creating one-page websites, prototypes or training projects.
 
